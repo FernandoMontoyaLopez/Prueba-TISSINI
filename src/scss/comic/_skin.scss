@@ -1,0 +1,65 @@
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.v-image__image{
+    background-size: contain;
+}
+
+
+.img-category-container{
+    display: flex;
+    justify-content: center;
+    }
+
+.img-category-container> img{
+    object-fit: cover;
+    max-width: 500px;
+}
+
+.login-vcard{
+    justify-content: center;
+    background-color: transparent;
+}
+.login-vcard-container{
+display: flex;
+align-items: center;
+justify-content: center;
+height: 70vh;
+}
+
+.v-sheet.v-card:not(.v-sheet--outlined){
+    background-color: transparent;
+    color:#fff;
+}
+
+.v-sheet.v-card:not(.v-sheet--outlined) .v-card__title{
+display: flex;
+justify-content: center;
+width: 500px;
+}
+
+.v-sheet.v-card:not(.v-sheet--outlined) img{
+    text-align: center!important;
+    max-width: 200px;
+    }
+
+.v-sheet.v-card:not(.v-sheet--outlined) h3{
+text-align: center!important;
+font-size: 18px;
+}
+.v-sheet.v-card:not(.v-sheet--outlined) label{
+color: white !important;
+}
+
+.v-sheet.v-card:not(.v-sheet--outlined) input{
+    color: white !important;
+    border: solid 2px white;
+    border-radius: 5px;
+    }
+    .v-sheet.v-card:not(.v-sheet--outlined)
+    .v-application .primary--text{
+        color: white !important;
+        caret-color: white !important;
+    }
