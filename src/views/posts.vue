@@ -245,8 +245,6 @@ export default {
                 return false;
             }
 
-            console.log("this.post",this.post);
-
             await this.axios.put(this.url_api+'/'+this.post.id, this.post).then((res)=>{
                 this.cerrarModal();
                 this.getData();
@@ -264,8 +262,6 @@ export default {
                     
                 }
 
-               console.log("err.response.data",err);
-
                 try {
                     Object.keys(errores).forEach(element => {
                         errores[element].forEach(value => {
@@ -277,7 +273,6 @@ export default {
                     
                 }
 
-                console.log("mensaje",mensaje);
                 this.cargando = false;
                 this.$swal("Error",`${mensaje}`,"error");     
             })
