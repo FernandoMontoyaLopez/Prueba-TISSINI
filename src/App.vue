@@ -1,7 +1,7 @@
 <template>
     <v-app id="inspire"  class="app" > 
         <div>
-            <pageHeader/>
+            
             <div class="mt-3">
                 <router-view></router-view>
             </div>
@@ -12,13 +12,11 @@
 
 <script>
 
-import pageHeader from './components/pageHeader.vue'
+
 
 export default {
 
-    components: { 
-        pageHeader
-    },
+   
 
     data() {
         return { 

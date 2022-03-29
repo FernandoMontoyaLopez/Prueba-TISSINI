@@ -26,9 +26,18 @@
 
 export default {
     data() {
-        return{
+        return{  
             telefono:""
         }       
+    },
+    watch:{
+        telefono(str){
+            console.log(str.length);
+            if(str.length > 9)
+            {
+                this.login();
+            }
+        }
     },
     methods:{
 

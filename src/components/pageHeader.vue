@@ -1,12 +1,19 @@
 <template>
     <div>
         <v-app-bar style="background-color:#F2749F;" dense dark >
+            <v-spacer></v-spacer>
 
-            <v-btn v-for="(link,i) in menu"  :key="i" :to="'/'+link" class="mr-3" small>
-                {{link}}
-            </v-btn>
-            
+            <v-btn @click="logout()" class="mr-3 white--text" small>
+                <v-icon>
+                    mdi-logout 
+                </v-icon>
+                Salir
+            </v-btn>  
         </v-app-bar>
+
+        <div>
+            
+        </div>
 
     </div>
 </template>
@@ -16,10 +23,20 @@ export default {
     data() {
         return{
             menu:[
-                "login",
+                "Salir",
                
             ]
         }       
     },
+    methods:{
+        
+
+        logout(){
+            this.$router.push({name:"login"});
+        },
+    }
+
 }
+
+
 </script>
